@@ -21,4 +21,9 @@ public class MainController {
         log.info("response: {}", response);
         return response;
     }
+
+    @GetMapping("getEnv")
+    public Map<String, String> getEnv () {
+        return System.getenv();
+    }
 }
